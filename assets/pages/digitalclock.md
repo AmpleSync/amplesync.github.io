@@ -12,4 +12,4 @@ actions:
 
 ![Clock implemented on Spartan 3E FPGA](/assets/images/clock.gif)
 
-
+[View code on GitHub](https://github.com/gitSiddharth/Digital-Clock)

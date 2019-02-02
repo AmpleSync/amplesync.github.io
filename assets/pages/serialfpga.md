@@ -73,4 +73,4 @@ Flow control: None
 
 ![Transmit B](/assets/images/transmit_B.jpg)
 
-[View code on GitHub)(https://github.com/gitSiddharth/UART)
+[View code on GitHub](https://github.com/gitSiddharth/UART)

@@ -18,73 +18,25 @@ Questasim.
 It should look like below
 
 ```
+transcript on
 
-set path_to_quartus c:/altera/10.1/quartus
-set type_of_sim compile_all
-
-
-if {[string equal $type_of_sim "compile_all"]} {
-	vlib lpm_ver
-	vmap lpm_ver lpm_ver
-	vlog -work lpm_ver $path_to_quartus/eda/sim_lib/220model.v
-
-	vlib altera_mf_ver
-	vmap altera_mf_ver altera_mf_ver
-	vlog -work altera_mf_ver $path_to_quartus/eda/sim_lib/altera_mf.v
-        
-	vlib altera_lnsim_ver
-	vmap altera_lnsim_ver altera_lnsim_ver
-	vlog -work altera_lnsim_ver $path_to_quartus/eda/sim_lib/altera_lnsim.sv
-	
-	vlib altera_ver
-	vmap altera_ver altera_ver
-	vlog -work altera_ver $path_to_quartus/eda/sim_lib/altera_primitives_quasar.v
-	vlog -work altera_ver $path_to_quartus/eda/sim_lib/altera_primitives.v
-	
-	vlib sgate_ver
-	vmap sgate_ver sgate_ver
-	vlog -work sgate_ver $path_to_quartus/eda/sim_lib/sgate.v
-
-	vlib cycloneive_ver
-	vmap cycloneive_ver cycloneive_ver
-	vlog -work cycloneive_ver $path_to_quartus/eda/sim_lib/cycloneive_atoms.v
-
-} elseif {[string equal $type_of_sim "functional"]} {
-	vlib lpm_ver
-	vmap lpm_ver lpm_ver
-	vlog -work lpm_ver  $path_to_quartus/eda/sim_lib/220model.v
-        
-        vlib altera_lnsim_ver
-	vmap altera_lnsim_ver altera_lnsim_ver
-	vlog -work altera_lnsim_ver  $path_to_quartus/eda/sim_lib/altera_lnsim.sv
-
-	vlib altera_mf_ver
-	vmap altera_mf_ver altera_mf_ver
-	vlog -work altera_mf_ver  $path_to_quartus/eda/sim_lib/altera_mf.v
-} elseif {[string equal $type_of_sim "ip_functional"]} {
-
-	vlib lpm_ver
-	vmap lpm_ver lpm_ver
-	vlog -work lpm_ver  $path_to_quartus/eda/sim_lib/220model.v
-
-        vlib altera_lnsim_ver
-	vmap altera_lnsim_ver altera_lnsim_ver
-	vlog -work altera_lnsim_ver  $path_to_quartus/eda/sim_lib/altera_lnsim.sv
-
-	vlib altera_mf_ver
-	vmap altera_mf_ver altera_mf_ver
-	vlog -work altera_mf_ver $path_to_quartus/eda/sim_lib/altera_mf.v
-	vlib sgate_ver
-	vmap sgate_ver sgate_ver
-	vlog -work sgate_ver  $path_to_quartus/eda/sim_lib/sgate.v
-
-} elseif {[string equal $type_of_sim "cycloneive"]} {
-	vlib cycloneive_ver
-	vmap cycloneive_ver cycloneive_ver
-	vlog -work cycloneive_ver  $path_to_quartus/eda/sim_lib/cycloneive_atoms.v
-} else {
-	puts "invalid code"
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
 }
+vlib rtl_work
+vmap work rtl_work
+
+
+vlog -vlog01compat -work work +incdir+F:/Files/HDLfiles/2019/January/FIFO_verification/simulation/modelsim {F:/Files/HDLfiles/2019/January/FIFO_verification/simulation/modelsim/fifo.vo}
+
+vlog -sv -work work +incdir+F:/Files/HDLfiles/2019/January/FIFO_verification/simulation/modelsim {F:/Files/HDLfiles/2019/January/FIFO_verification/simulation/modelsim/tb_fifo_top.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" tb_fifo_top
+
+add wave sim:/tb_fifo_top/intf/*
+view structure
+view signals
+run -all
 
 ```
 Create a Questasim project in the location where you have compiled the above files and run the .do file from the transcript window.   

@@ -1,12 +1,7 @@
 ---
-id: 55
-title: Simulating Intel/Altera FIFO IP using UVM in Questasim
-date: 2019-01-03
-excerpt: |
-  FPGA designs often contain one or more built-in IPs provided by the FPGA vendor tools. But verifying those designs is not a straight forward task. In case of Intel/Altera FPGA tools they provide their own version of Modelsim called Modelsim-Altera to simulate the designs created in Quartus Prime or Quartus II. But it is limited in what it can perform and if you want to use advanced verification techniques you will mostly want to go with Questasim.
-  
 layout: post
-permalink: /2019/01/03/verifying-designs-with-intel-altera-ips-using-questasim/
+title: "Simulating Intel/Altera FIFO IP using UVM in Questasim"
+date: "2019-01-20"
 ---
 
 FPGA designs often contain one or more built-in IPs provided by the FPGA vendor tools. 

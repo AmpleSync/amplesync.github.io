@@ -29,7 +29,7 @@ timezone: # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Home # Needed for Siteleaf
+    title: Blog # Needed for Siteleaf
     output: true
     description:
 

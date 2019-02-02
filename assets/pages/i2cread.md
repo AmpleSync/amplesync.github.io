@@ -49,3 +49,5 @@ Implemented on Papilio One FPGA board
 
 The 11-bit output is converted to hexadecimal and indicated on the seven segment display.
 Output: (dc)₁₆ * 0.125 = (220)₁₀ * 0.125 = 27.5°C
+
+[View code on GitHub](https://github.com/gitSiddharth/I2C)

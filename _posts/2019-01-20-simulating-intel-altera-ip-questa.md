@@ -4,21 +4,16 @@ title: "Simulating Intel/Altera FIFO IP using UVM in Questasim"
 date: "2019-01-20"
 ---
 
-FPGA designs often contain one or more built-in IPs provided by the FPGA vendor tools. 
-But verifying those designs is not a straight forward task. In case of Intel/Altera FPGA 
-tools they provide their own version of Modelsim called Modelsim-Altera to simulate the 
-designs created in Quartus Prime or Quartus II. But it is limited in what it can perform and if you want to use advanced 
-verification techniques you will mostly want to go with Questasim. 
+In the previous post I explained a method for simulating Altera IPs in Questasim, as an example I tried to verify Altera FIFO IP using UVM in Questasim.
+For that, first you need to create a FIFO in Quartus II using Tools -> MegaWizard Plug-In Manager option. Instantiate a FIFO with required data width and depth. I chose data width of 8 and depth of 256 and used same clock for both read and write, which makes it synchronous. 
 
-There's a method by which Questasim can be made to work with Altera IPs. It involves compiling the
-standard altera components to create libraries manually in Questasim and making changes to
-the root configuration file. So it might be better to save a backup of the modelsim.ini
-file if anything goes wrong.
+Under Tools -> Options -> EDA Tools Options, provide the execuatable path of Questasim. 
+Select Assignments -> Settings -> Simulation and choose QuestaSim as Tool name and provide the testbench location in NativeLink settings.  
+Compile the project and click on Tools -> Run EDA Simulation Tool -> EDA RTL Simulation.
 
-I used the below tcl script to compile the component files. Make sure to include
-the correct file name for the FPGA you have. In my case it is Cyclone IV E.
-Rest of the files should remain the same. Also make sure these files are actually present in
-the Quartus II installation folder. Check under Quartus II installation directory/quartus/eda/sim_lib.
+Now you should be able to see a .do file in the project location\Simulation\modelsim along with the netlist file .vo if you had chosen verilog
+in the Simulation option. Open the .do file and remove the library mappings since we have already compiled the libraries and added them to the
+Questasim. 
 
 ```
 

@@ -9,7 +9,6 @@
 
 # 1. Files excluded from Jekyll builds
 exclude:
-- README.md
 - CNAME
 
 # 2. Installed Gems
@@ -61,5 +60,4 @@ lang: en-GB
 
 navigation:                  # show navigation links in the header
   - index.html
-  - archive.md
   - projects.md

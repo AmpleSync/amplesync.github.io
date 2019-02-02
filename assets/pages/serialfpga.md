@@ -72,3 +72,5 @@ Flow control: None
 ##### TX test: Transmitting "01000010(B)" from FPGA board to PC
 
 ![Transmit B](/assets/images/transmit_B.jpg)
+
+[View code on GitHub)(https://github.com/gitSiddharth/UART)

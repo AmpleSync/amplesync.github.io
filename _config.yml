@@ -16,7 +16,7 @@ plugins:
 - jekyll-paginate
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
+paginate: 10 # jekyll-paginate > items per page
 paginate_path: page:num # jekyll-paginate > blog page
 
 # 4. Jekyll settings
@@ -50,11 +50,11 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-title: "Garth" # Site name or title
+title: "blog.amplesync" # Site name or title
 logo: "/assets/logo.svg" # Site logo
 # favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
-description: "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
-url: "https://garth.darn.es" # Site url
+description: # Site description and default description
+url: "https://blog.amplesync.com" # Site url
 baseurl: ""
 lang: en-GB
 

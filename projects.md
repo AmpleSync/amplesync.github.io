@@ -8,7 +8,7 @@ title: Projects
 * The design is synthesized and implemented on Cyclone IV FPGA.
 * Achieved timing closure using TimeQuest Timing Analyzer.
 * Tools used: Altera Quartus II, TimeQuest and Questasim                             
-#### [View Project](/serialfpga.md)
+#### [View Project](/projects/serialfpga.md)
 
 ### Design of an I²C to read data from LM75A
 * Design and testbench coded in Verilog.
@@ -16,7 +16,7 @@ title: Projects
 * Design is implemented on Spartan 3E FPGA of Papilio One FPGA board.                                  
 * Temperature data is obtained in hexadecimal and displayed on seven segment display.
 * Tools used: Xilinx ISE and Questasim
-#### [View Project](/i2cread.md)
+#### [View Project](/projects/i2cread.md)
 
 ### 8-bit RISC CPU
 * The processor is coded in Verilog.
@@ -25,12 +25,12 @@ title: Projects
 * It is synthesized and implemented on Cyclone IV FPGA.
 * Various internal signals are observed using SignalTap logic analyzer.  
 * Tools used: Intel/Altera Quartus II and Questasim
-#### [View Project](/prorisc.md)
+#### [View Project](/projects/prorisc.md)
 
 ### Digital Clock on FPGA
 * Design is coded in Verilog.
 * Synthesized and Implemented on Spartan 3E FPGA.
 * Time is displayed on the seven segment display.
 * Tool used: Xilinx ISE
-#### [View Project](/digitalclock.md) 
+#### [View Project](/projects/digitalclock.md) 
 

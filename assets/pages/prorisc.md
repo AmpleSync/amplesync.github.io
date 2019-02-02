@@ -61,3 +61,4 @@ Observing various control signals using SignalTap Logic Analyzer
 
 ![](/assets/images/sigtap2.gif)
 
+[View code on GitHub](https://github.com/gitSiddharth/8-bit-RISC-CPU)

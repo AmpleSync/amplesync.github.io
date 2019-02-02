@@ -8,7 +8,7 @@ excerpt: |
 layout: post
 permalink: /2018/10/06/uart-achieving-timing/
 ---
-Although my [UART project](https://siddharth.pro/serialfpga.html) worked fine when implemented on FPGA, there are some critical warnings related to timing which shows up during the compilation.
+Although my [UART project](https://blog.amplesync.com/assets/pages/serialfpga/) worked fine when implemented on FPGA, there are some critical warnings related to timing which shows up during the compilation.
 
 ![Step 1](/assets/images/UART_timing/Step1.png)
 

@@ -15,6 +15,8 @@ Now you should be able to see a .do file in the project location\Simulation\mode
 in the Simulation option. Open the .do file and remove the library mappings since we have already compiled the libraries and added them to the
 Questasim. 
 
+It should look like below
+
 ```
 
 set path_to_quartus c:/altera/10.1/quartus
@@ -85,24 +87,10 @@ if {[string equal $type_of_sim "compile_all"]} {
 }
 
 ```
+Create a Questasim project in the location where you have compiled the above files and run the .do file from the transcript window.   
 
-Save this script as altera_lib.tcl in the Questasim root directory path.
-Now open up Questasim and change the directory to the path where you placed
-the tcl script i.e. in the root directory.
+#### Output Waveform
 
-Now run the file from the transcript window using do command "``` do altera_lib.tcl ```".
+![Waveform](/assets/images/alt_fifo.png) 
 
-This will take a while. After that's done, check the Questasim installation folder for the new folders created by the command.
-
-Now we must make changes in the configuration file modelsim.ini as below.
-
-```
-lpm_ver = $MODEL_TECH/../lpm_ver
-altera_lnsim_ver = $MODEL_TECH/../altera_lnsim_ver
-altera_mf_ver = $MODEL_TECH/../altera_mf_ver
-altera_ver = $MODEL_TECH/../altera_ver
-sgate_ver = $MODEL_TECH/../sgate_ver
-cycloneive_ver = $MODEL_TECH/../cycloneive_ver
-```
-
-These must be included above [vcom]. After that's done, save the file and open Questasim. You should be able to see the new altera libraries created under Library window. The Questasim can now be used to verify the designs with Altera IPs.
+[View code on GitHub](https://github.com/gitSiddharth/altera_fifo_ip_verification)

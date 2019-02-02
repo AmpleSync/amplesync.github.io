@@ -10,14 +10,7 @@
 # 1. Files excluded from Jekyll builds
 exclude:
 - README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
 - CNAME
-- Gemfile
-- Gemfile.lock
-- garth-jekyll-theme.gemspec
 
 # 2. Installed Gems
 plugins:
@@ -65,3 +58,8 @@ description: "A stupidly simple theme for Jekyll, using the official Jekyll them
 url: "https://garth.darn.es" # Site url
 baseurl: ""
 lang: en-GB
+
+navigation:                  # show navigation links in the header
+  - index.html
+  - archive.md
+  - projects.md

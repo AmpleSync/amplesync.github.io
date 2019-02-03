@@ -4,7 +4,7 @@ title: Clock
 actions:
 - label: "View code on GitHub"
   icon: github
-  url: https://github.com/gitSiddharth/Digital-Clock
+  url: https://github.com/sdarth/Digital-Clock
 ---
 
 
@@ -12,4 +12,4 @@ actions:
 
 ![Clock implemented on Spartan 3E FPGA](/assets/images/clock.gif)
 
-[View code on GitHub](https://github.com/gitSiddharth/Digital-Clock)
+[View code on GitHub](https://github.com/sdarth/Digital-Clock)

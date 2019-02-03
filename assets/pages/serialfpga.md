@@ -5,7 +5,7 @@ alt_title: UART
 actions:
 - label: "View code on GitHub"
   icon: github
-  url: https://github.com/gitSiddharth/UART
+  url: https://github.com/sdarth/UART
 ---
 
 
@@ -73,4 +73,4 @@ Flow control: None
 
 ![Transmit B](/assets/images/transmit_B.jpg)
 
-[View code on GitHub](https://github.com/gitSiddharth/UART)
+[View code on GitHub](https://github.com/sdarth/UART)

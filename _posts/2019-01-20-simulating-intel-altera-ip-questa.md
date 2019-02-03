@@ -48,4 +48,4 @@ Create a Questasim project in the location where you have compiled the above fil
 
 ![Waveform](/assets/images/alt_fifo.png) 
 
-[View code on GitHub](https://github.com/gitSiddharth/altera_fifo_ip_verification)
+[View code on GitHub](https://github.com/sdarth/altera_fifo_ip_verification)

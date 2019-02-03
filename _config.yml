@@ -61,6 +61,7 @@ lang: en-GB
 navigation:                  # show navigation links in the header
   - index.html
   - projects.md
+  - Github.md
 
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics

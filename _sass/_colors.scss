@@ -2,7 +2,7 @@
 $bodyColour: #46412A;
 $headingColour: darken($bodyColour, 5%);
 $linkColour: #0000ff;
-$hoverColour: lighten($linkColour, 30%);
+$hoverColour: lighten($headingColour, 30%);
 $captionColour: lighten($headingColour, 40%);
 $white: #fff;
 

@@ -66,13 +66,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="9"
-       y="192"
+       x="14"
+       y="148"
        id="text1389"><tspan
          sodipodi:role="line"
          id="tspan1387"
-         x="9"
-         y="192"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:200.00001526px;font-family:'AR DESTINE';-inkscape-font-specification:'AR DESTINE weight=101'">AS</tspan></text>
+         x="14"
+         y="148"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'AR DESTINE';-inkscape-font-specification:'AR DESTINE weight=101'">AmpleSync</tspan></text>
   </g>
 </svg>
